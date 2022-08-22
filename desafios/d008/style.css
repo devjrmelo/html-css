@@ -1,0 +1,16 @@
+.index {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verde {
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.amarela {
+    background-color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    color: goldenrod;
+}
