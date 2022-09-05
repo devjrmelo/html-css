@@ -18,7 +18,6 @@
         th, td {
             border: 1px solid black;
             padding: 2.5px;
-            font-weight: bold;
         }
 
         caption {
@@ -35,6 +34,10 @@
         tbody > tr:nth-child(odd) {
             background-color: rgba(199, 196, 191, 0.295);
         }
+
+        tfoot > tr:nth-child(odd) {
+            background-color: rgba(199, 196, 191, 0.295);
+        }
     </style>
 </head>
 <body>
@@ -44,14 +47,14 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria dos Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -70,7 +73,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -89,6 +92,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
